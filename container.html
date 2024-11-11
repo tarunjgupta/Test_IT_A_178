@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="question.css">
+    <style>
+        #h{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="login-section">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required><br><br>
+            <input type="password" id="password" placeholder="Password" required><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <!-- Dashboard Section (Hidden by Default) -->
+    <div id="dashboard-section" style="display: none;">
+        <h2 id="h" style="color:green">Welcome Abhishek</h2>
+        
+        <!-- Placeholder for user details -->
+        <div id="user-details">
+            <p>User details will be displayed here.</p>
+        </div>
+        
+        <!-- Buttons -->
+        <button id="logout-button" style="background-color:red; color:white;">Logout</button>
+
+        <!-- Sorting Dropdown -->
+        <select id="sort-users">
+            <option value="default">Sort By</option>
+            <option value="name">Name</option>
+            <option value="followers">Followers</option>
+        </select>
+
+        <!-- List of Top 10 GitHub Users -->
+        <ul id="user-list">
+            <!-- Users will be populated here dynamically -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

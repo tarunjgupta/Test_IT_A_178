@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .btn{
+            color:white;
+            background-color: green;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+          }
+          .inp{
+            width:100%;
+            padding: 6px;
+            border-color: rgb(109, 172, 234);
+            border-style: solid;
+            border-radius: 5px
+          }
+          .divv{
+            border: 1px solid white ;
+            padding: 18px; 
+            background-color:beige;
+            border-radius: 8px;
+          }
+    </style>
+</head>
+<body>
+  <div class="divv">
+    <form>
+        <label for="login"><strong style="font-size: 25px; font-family: Calibri;">Login</strong></label><br><br>
+        <input type="text" id="login" placeholder="Username" class="inp" name="login"><br>
+        <label for="pass"></label><br>
+        <input type="text" id="pass" placeholder="Password" class="inp" name="pass"><br><br>
+        <input type="button" value="Login" class="btn" onclick='alert("Form Submitted")'>
+    </form>
+</div>
+</body>
+</html>
